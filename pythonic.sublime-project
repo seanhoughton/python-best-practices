@@ -1,0 +1,26 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": [".venv"]
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Complexity",
+		    "cmd": ["$project_path/.venv/bin/radon", "cc", "$file"],
+		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+		    "selector": "source.python"
+		},
+		{
+			"name": "Profile",
+			"working_dir": "$project_path",
+		    "cmd": ["$project_path/profile", "$file"],
+		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+		    "selector": "source.python"
+		}
+	]
+}
