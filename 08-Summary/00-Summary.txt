@@ -1,0 +1,4 @@
+
+- Try to learn and use Pythonic style
+- Strike a balance between functional and procedural style
+- Don't treat "scripts" like "scripts" - build quality software
