@@ -5,4 +5,6 @@ Combination of how to use python features + style suggestions
 - Functional style programming
 - Decorators
 - Gotchas
+- [If there is time: look at some code]
+- Questions
 
