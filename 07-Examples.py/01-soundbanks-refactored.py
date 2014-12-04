@@ -24,7 +24,7 @@ def get_banks_in_file(filename):
     with open(filename, 'r') as f:
         sound_lines = [line for line in f if SOUND_ACTION_NAME in line]
         for line in sound_lines:
-            for bank_name in [part.replace('SND_', '') for part in line.split('"') if SND_PREFIX in part]:
+            for bank_name in [part.replace(SND_PREFIX, '') for part in line.split('"') if SND_PREFIX in part]:
                 yield bank_name
 
 
