@@ -1,0 +1,5 @@
+Features of functional programming we can make use of
+
+- All data is constant, variables never change meaning
+- Focus on *what* you want instead of *how* to do it (big grey area)
+

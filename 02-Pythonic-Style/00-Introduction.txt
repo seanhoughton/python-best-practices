@@ -1,0 +1,6 @@
+Writing code in "Pythonic" style...
+
+- Generally gives you the best performance
+- Reduces the amount of code you have to write
+- Helps ensure your code is readable to other Python programmers
+- Lets you leverage automatic code checking tools (PEP8, lint, etc.)

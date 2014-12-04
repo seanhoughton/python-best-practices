@@ -6,14 +6,12 @@ User = namedtuple('User', ['is_superadmin', 'is_siteadmin', 'is_staff'])
 
 def complex_boolean_logic(user):
     '''Multiple "or" comparisons'''
-    if user.is_superadmin or user.is_siteadmin or user.is_staff:
-        pass
+    return user.is_superadmin or user.is_siteadmin or user.is_staff
 
 
 def simple_boolean_logic(user):
     '''Use a set operation to simplify'''
-    if any([user.is_superadmin, user.is_siteadmin, user.is_staff]):  # could also use "all()"
-        pass
+    return any([user.is_superadmin, user.is_siteadmin, user.is_staff])  # could also use "all()"
 
 
 if __name__ == "__main__":

@@ -1,0 +1,8 @@
+Combination of how to use python features + style suggestions
+
+- Basic "Pythonic" style
+- Dictionaries
+- Functional style programming
+- Decorators
+- Gotchas
+
