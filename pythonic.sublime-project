@@ -12,6 +12,14 @@
 		{
 			"name": "Complexity",
 		    "cmd": ["$project_path/.venv/bin/radon", "cc", "$file"],
+		    "windows": { "cmd": ["$project_path/.venv/Scripts/radon.exe", "cc", "$file"] },
+		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+		    "selector": "source.python"
+		},
+		{
+			"name": "Maintainability",
+		    "cmd": ["$project_path/.venv/bin/radon", "mi", "--show", "$file"],
+		    "windows": { "cmd": ["$project_path/.venv/Scripts/radon.exe", "mi", "--show", "$file"] },
 		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 		    "selector": "source.python"
 		},
@@ -19,6 +27,7 @@
 			"name": "Profile",
 			"working_dir": "$project_path",
 		    "cmd": ["$project_path/profile", "$file"],
+		    "windows": { "cmd": ["$project_path/profile.cmd", "$file"] },
 		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 		    "selector": "source.python"
 		}
