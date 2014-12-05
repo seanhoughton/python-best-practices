@@ -16,7 +16,7 @@ def __private_function():
 
 
 class MyDemoClass(object):
-    def __private_member_function():
+    def __private_member_function(self):
         '''This function is only visible to other member functions'''
         pass
 

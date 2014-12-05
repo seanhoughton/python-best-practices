@@ -11,7 +11,7 @@
 	[
 		{
 			"name": "Complexity",
-		    "cmd": ["$project_path/.venv/bin/radon", "cc", "$file"],
+		    "cmd": ["$project_path/.venv/bin/radon", "cc", "--show", "$file"],
 		    "windows": { "cmd": ["$project_path/.venv/Scripts/radon.exe", "cc", "$file"] },
 		    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 		    "selector": "source.python"
