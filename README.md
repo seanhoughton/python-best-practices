@@ -5,6 +5,6 @@ Discussion about python coding best practices with some examples.
 
 ```
 virtualenv .venv
-.venv/bin/activate
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
